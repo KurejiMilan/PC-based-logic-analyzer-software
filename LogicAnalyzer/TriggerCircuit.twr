@@ -1,0 +1,1112 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml TriggerCircuit.twx TriggerCircuit.ncd -o
+TriggerCircuit.twr TriggerCircuit.pcf
+
+Design file:              TriggerCircuit.ncd
+Physical constraint file: TriggerCircuit.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock latchedWord<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.846(R)|      SLOW  |         5.175(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.964(R)|      SLOW  |         5.153(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.584(R)|      SLOW  |         5.493(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.875(R)|      SLOW  |         5.625(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.374(R)|      SLOW  |         5.382(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<5> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |        10.131(R)|      SLOW  |         5.885(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<6> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.050(R)|      SLOW  |         5.254(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock latchedWord<7> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.749(R)|      SLOW  |         5.766(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.118(R)|      SLOW  |         4.646(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.706(R)|      SLOW  |         5.037(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.599(R)|      SLOW  |         4.828(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.670(R)|      SLOW  |         4.783(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.398(R)|      SLOW  |         4.730(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<5> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.829(R)|      SLOW  |         4.948(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<6> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.614(R)|      SLOW  |         4.965(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock maskRegister<7> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.945(R)|      SLOW  |         5.217(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock resetTrigger to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         7.719(R)|      SLOW  |         4.397(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.656(R)|      SLOW  |         5.010(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.991(R)|      SLOW  |         5.164(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.957(R)|      SLOW  |         5.057(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.496(R)|      SLOW  |         5.378(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<4> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.294(R)|      SLOW  |         5.322(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<5> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         8.975(R)|      SLOW  |         5.035(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<6> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.409(R)|      SLOW  |         5.570(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerOn<7> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         9.746(R)|      SLOW  |         5.758(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock triggerSelector to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+triggerOut  |         7.772(R)|      SLOW  |         4.423(R)|      FAST  |s1                |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock latchedWord<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock latchedWord<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock maskRegister<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock resetTrigger
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerOn<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerSelector
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+latchedWord<0> |    0.929|         |         |         |
+latchedWord<1> |    0.929|         |         |         |
+latchedWord<2> |    0.929|         |         |         |
+latchedWord<3> |    0.929|         |         |         |
+latchedWord<4> |    0.929|         |         |         |
+latchedWord<5> |    0.929|         |         |         |
+latchedWord<6> |    0.929|         |         |         |
+latchedWord<7> |    0.929|         |         |         |
+maskRegister<0>|    0.929|         |         |         |
+maskRegister<1>|    0.929|         |         |         |
+maskRegister<2>|    0.929|         |         |         |
+maskRegister<3>|    0.929|         |         |         |
+maskRegister<4>|    0.929|         |         |         |
+maskRegister<5>|    0.929|         |         |         |
+maskRegister<6>|    0.929|         |         |         |
+maskRegister<7>|    0.929|         |         |         |
+resetTrigger   |    0.929|         |         |         |
+triggerOn<0>   |    0.929|         |         |         |
+triggerOn<1>   |    0.929|         |         |         |
+triggerOn<2>   |    0.929|         |         |         |
+triggerOn<3>   |    0.929|         |         |         |
+triggerOn<4>   |    0.929|         |         |         |
+triggerOn<5>   |    0.929|         |         |         |
+triggerOn<6>   |    0.929|         |         |         |
+triggerOn<7>   |    0.929|         |         |         |
+triggerSelector|    0.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Apr 19 08:35:00 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

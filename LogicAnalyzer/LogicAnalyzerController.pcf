@@ -1,0 +1,46 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat May 07 21:34:30 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dataFromMcu<0>" LOCATE = SITE "P115" LEVEL 1;
+COMP "trigger_mux_select" LOCATE = SITE "P138" LEVEL 1;
+COMP "dataFromMcu<1>" LOCATE = SITE "P114" LEVEL 1;
+COMP "dataFromMcu<2>" LOCATE = SITE "P112" LEVEL 1;
+COMP "clock_in" LOCATE = SITE "P55" LEVEL 1;
+COMP "dataFromMcu<3>" LOCATE = SITE "P111" LEVEL 1;
+COMP "reset_trigger" LOCATE = SITE "P140" LEVEL 1;
+COMP "dataFromMcu<4>" LOCATE = SITE "P105" LEVEL 1;
+COMP "dout<0>" LOCATE = SITE "P126" LEVEL 1;
+COMP "dataFromMcu<5>" LOCATE = SITE "P102" LEVEL 1;
+COMP "dout<1>" LOCATE = SITE "P124" LEVEL 1;
+COMP "dataFromMcu<6>" LOCATE = SITE "P101" LEVEL 1;
+COMP "dout<2>" LOCATE = SITE "P121" LEVEL 1;
+COMP "dataFromMcu<7>" LOCATE = SITE "P100" LEVEL 1;
+COMP "dout<3>" LOCATE = SITE "P120" LEVEL 1;
+COMP "master_control" LOCATE = SITE "P99" LEVEL 1;
+COMP "write_enable<0>" LOCATE = SITE "P142" LEVEL 1;
+COMP "dout<4>" LOCATE = SITE "P119" LEVEL 1;
+COMP "dout<5>" LOCATE = SITE "P118" LEVEL 1;
+COMP "dout<6>" LOCATE = SITE "P117" LEVEL 1;
+COMP "inc" LOCATE = SITE "P127" LEVEL 1;
+COMP "dout<7>" LOCATE = SITE "P116" LEVEL 1;
+COMP "test_signal" LOCATE = SITE "P45" LEVEL 1;
+COMP "reset_counter" LOCATE = SITE "P84" LEVEL 1;
+COMP "pulsein_demux_select<0>" LOCATE = SITE "P137" LEVEL 1;
+COMP "pulsein_demux_select<1>" LOCATE = SITE "P134" LEVEL 1;
+COMP "clock_select_clock_in" LOCATE = SITE "P133" LEVEL 1;
+COMP "trigger_status" LOCATE = SITE "P131" LEVEL 1;
+COMP "dp<0>" LOCATE = SITE "P14" LEVEL 1;
+COMP "dp<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "dp<2>" LOCATE = SITE "P16" LEVEL 1;
+COMP "enable_latch" LOCATE = SITE "P143" LEVEL 1;
+COMP "dp<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "dp<4>" LOCATE = SITE "P21" LEVEL 1;
+COMP "latch_pulse" LOCATE = SITE "P139" LEVEL 1;
+COMP "dp<5>" LOCATE = SITE "P22" LEVEL 1;
+COMP "dp<6>" LOCATE = SITE "P23" LEVEL 1;
+COMP "dp<7>" LOCATE = SITE "P24" LEVEL 1;
+COMP "complete" LOCATE = SITE "P132" LEVEL 1;
+SCHEMATIC END;
+

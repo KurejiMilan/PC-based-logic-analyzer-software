@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/FpgaProjects/LogicAnalyzer/controllerTB_isim_beh.exe -prj D:/FpgaProjects/LogicAnalyzer/controllerTB_beh.prj work.controllerTB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/ipcore_dir/internalRAM.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/triggerTflipflop.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/register8bit.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/Dflipflop.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/clockSource.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/addressCounter.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.vhd" into library work
+Parsing VHDL file "D:/FpgaProjects/LogicAnalyzer/controllerTB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity triggerTflipflop [triggertflipflop_default]
+Compiling architecture behavioral of entity TriggerCircuit [triggercircuit_default]
+Compiling architecture behavioral of entity Dflipflop [dflipflop_default]
+Compiling architecture behavioral of entity clockSource [clocksource_default]
+Compiling architecture behavioral of entity addressCounter [addresscounter_default]
+Compiling architecture behavioral of entity register8bit [register8bit_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture internalram_a of entity internalRAM [internalram_default]
+Compiling architecture behavioral of entity LogicAnalyzerController [logicanalyzercontroller_default]
+Compiling architecture behavior of entity controllertb
+Time Resolution for simulation is 1ps.
+Compiled 31 VHDL Units
+Built simulation executable D:/FpgaProjects/LogicAnalyzer/controllerTB_isim_beh.exe
+Fuse Memory Usage: 44700 KB
+Fuse CPU Usage: 1453 ms

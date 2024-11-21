@@ -1,0 +1,859 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: LogicAnalyzerController.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LogicAnalyzerController.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LogicAnalyzerController"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : LogicAnalyzerController
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\ipcore_dir\internalRAM.vhd" into library work
+Parsing entity <internalRAM>.
+Parsing architecture <internalRAM_a> of entity <internalram>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\triggerTflipflop.vhd" into library work
+Parsing entity <triggerTflipflop>.
+Parsing architecture <Behavioral> of entity <triggertflipflop>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\TriggerCircuit.vhd" into library work
+Parsing entity <TriggerCircuit>.
+Parsing architecture <Behavioral> of entity <triggercircuit>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\register8bit.vhd" into library work
+Parsing entity <register8bit>.
+Parsing architecture <Behavioral> of entity <register8bit>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\Dflipflop.vhd" into library work
+Parsing entity <Dflipflop>.
+Parsing architecture <Behavioral> of entity <dflipflop>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\clockSource.vhd" into library work
+Parsing entity <clockSource>.
+Parsing architecture <Behavioral> of entity <clocksource>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\addressCounter.vhd" into library work
+Parsing entity <addressCounter>.
+Parsing architecture <Behavioral> of entity <addresscounter>.
+Parsing VHDL file "D:\FpgaProjects\LogicAnalyzer\LogicAnalyzerController.vhd" into library work
+Parsing entity <LogicAnalyzerController>.
+Parsing architecture <Behavioral> of entity <logicanalyzercontroller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <LogicAnalyzerController> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <TriggerCircuit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <triggerTflipflop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Dflipflop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clockSource> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <addressCounter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <register8bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <internalRAM> (architecture <internalRAM_a>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LogicAnalyzerController>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\LogicAnalyzerController.vhd".
+    Found 3-bit register for signal <clock_select_mux_register>.
+    Found 8-bit register for signal <inputLatch>.
+WARNING:Xst:737 - Found 1-bit latch for signal <comparelsb_latchin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <maskreg_latchin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <triggerreg_latchin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <comparemsb_latchin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   4 Latch(s).
+Unit <LogicAnalyzerController> synthesized.
+
+Synthesizing Unit <TriggerCircuit>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\TriggerCircuit.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <TriggerCircuit> synthesized.
+
+Synthesizing Unit <triggerTflipflop>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\triggerTflipflop.vhd".
+    Found 1-bit register for signal <tQout>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <triggerTflipflop> synthesized.
+
+Synthesizing Unit <Dflipflop>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\Dflipflop.vhd".
+    Found 1-bit register for signal <doutput>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Dflipflop> synthesized.
+
+Synthesizing Unit <clockSource>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\clockSource.vhd".
+    Found 7-bit register for signal <clockSourceCounter>.
+    Found 7-bit adder for signal <clockSourceCounter[6]_GND_9_o_add_4_OUT> created at line 53.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0015> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clockSource> synthesized.
+
+Synthesizing Unit <addressCounter>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\addressCounter.vhd".
+    Found 8-bit register for signal <tempcounter>.
+    Found 16-bit register for signal <addressCounterOutput>.
+    Found 16-bit adder for signal <addressCounterOutput[15]_GND_10_o_add_3_OUT> created at line 61.
+    Found 8-bit adder for signal <tempcounter[7]_GND_10_o_add_4_OUT> created at line 62.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <addressCounter> synthesized.
+
+Synthesizing Unit <register8bit>.
+    Related source file is "D:\FpgaProjects\LogicAnalyzer\register8bit.vhd".
+    Found 8-bit register for signal <outBus>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <register8bit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 2
+ 16-bit register                                       : 1
+ 3-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 6
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 18
+ 1-bit xor2                                            : 16
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/internalRAM.ngc>.
+Loading core <internalRAM> for timing and area information for instance <RamModule>.
+
+Synthesizing (advanced) Unit <clockSource>.
+The following registers are absorbed into counter <clockSourceCounter>: 1 register on signal <clockSourceCounter>.
+Unit <clockSource> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 69
+ Flip-Flops                                            : 69
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 18
+ 1-bit xor2                                            : 16
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <tempcounter_3> of sequential type is unconnected in block <addressCounter>.
+WARNING:Xst:2677 - Node <tempcounter_4> of sequential type is unconnected in block <addressCounter>.
+WARNING:Xst:2677 - Node <tempcounter_5> of sequential type is unconnected in block <addressCounter>.
+WARNING:Xst:2677 - Node <tempcounter_6> of sequential type is unconnected in block <addressCounter>.
+WARNING:Xst:2677 - Node <tempcounter_7> of sequential type is unconnected in block <addressCounter>.
+
+Optimizing unit <register8bit> ...
+
+Optimizing unit <LogicAnalyzerController> ...
+
+Optimizing unit <addressCounter> ...
+
+Optimizing unit <TriggerCircuit> ...
+INFO:Xst:2261 - The FF/Latch <addressCounterModule/addressCounterOutput_0> in Unit <LogicAnalyzerController> is equivalent to the following FF/Latch, which will be removed : <addressCounterModule/tempcounter_0> 
+INFO:Xst:2261 - The FF/Latch <addressCounterModule/addressCounterOutput_1> in Unit <LogicAnalyzerController> is equivalent to the following FF/Latch, which will be removed : <addressCounterModule/tempcounter_1> 
+INFO:Xst:2261 - The FF/Latch <addressCounterModule/addressCounterOutput_2> in Unit <LogicAnalyzerController> is equivalent to the following FF/Latch, which will be removed : <addressCounterModule/tempcounter_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LogicAnalyzerController, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LogicAnalyzerController.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 111
+#      GND                         : 2
+#      INV                         : 3
+#      LUT1                        : 15
+#      LUT2                        : 10
+#      LUT3                        : 20
+#      LUT4                        : 2
+#      LUT5                        : 4
+#      LUT6                        : 22
+#      MUXCY                       : 15
+#      VCC                         : 2
+#      XORCY                       : 16
+# FlipFlops/Latches                : 74
+#      FD                          : 43
+#      FD_1                        : 1
+#      FDE                         : 26
+#      LD                          : 4
+# RAMS                             : 32
+#      RAMB16BWER                  : 32
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 37
+#      IBUF                        : 26
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              66  out of  11440     0%  
+ Number of Slice LUTs:                   76  out of   5720     1%  
+    Number used as Logic:                76  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    107
+   Number with an unused Flip Flop:      41  out of    107    38%  
+   Number with an unused LUT:            31  out of    107    28%  
+   Number of fully used LUT-FF pairs:    35  out of    107    32%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    102    38%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)                                                                                                                 | Load  |
+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+ws1(ws11:O)                         | NONE(*)(inputLatch_0)                                                                                                                 | 8     |
+_n0085(_n0085<1>1:O)                | NONE(*)(comparelsb_latchin)                                                                                                           | 1     |
+_n0089(_n0089<1>1:O)                | NONE(*)(maskreg_latchin)                                                                                                              | 1     |
+_n0093(_n0093<1>1:O)                | NONE(*)(triggerreg_latchin)                                                                                                           | 1     |
+_n0081(_n0081<1>1:O)                | NONE(*)(comparemsb_latchin)                                                                                                           | 1     |
+clock_select_clock_in               | BUFGP                                                                                                                                 | 3     |
+ws4(ws42:O)                         | NONE(*)(DlatchModule/doutput)                                                                                                         | 17    |
+clock_in                            | BUFGP                                                                                                                                 | 7     |
+triggerModule/s1(triggerModule/s1:O)| NONE(*)(triggerModule/Tflipflop0/tQout)                                                                                               | 1     |
+comparelsb_latchin                  | NONE(comparelsb_register_module/outBus_7)                                                                                             | 8     |
+comparemsb_latchin                  | NONE(comparemsb_register_module/outBus_7)                                                                                             | 8     |
+triggerreg_latchin                  | NONE(triggeron_register_module/outBus_7)                                                                                              | 8     |
+maskreg_latchin                     | NONE(mask_register_module/outBus_7)                                                                                                   | 8     |
+ws5(ws51:O)                         | NONE(*)(RamModule/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1)                           | 34    |
+RamModule/N1                        | NONE(RamModule/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 32    |
+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.859ns (Maximum Frequency: 145.796MHz)
+   Minimum input arrival time before clock: 3.781ns
+   Maximum output required time after clock: 6.030ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ws4'
+  Clock period: 6.859ns (frequency: 145.796MHz)
+  Total number of paths / destination ports: 154 / 17
+-------------------------------------------------------------------------
+Delay:               3.429ns (Levels of Logic = 2)
+  Source:            addressCounterModule/addressCounterOutput_11 (FF)
+  Destination:       DlatchModule/doutput (FF)
+  Source Clock:      ws4 rising
+  Destination Clock: ws4 falling
+
+  Data Path: addressCounterModule/addressCounterOutput_11 to DlatchModule/doutput
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             34   0.447   1.549  addressCounterModule/addressCounterOutput_11 (addressCounterModule/addressCounterOutput_11)
+     LUT6:I3->O            1   0.205   0.924  ws6<0>3 (ws6<0>2)
+     LUT6:I1->O            1   0.203   0.000  ws6<0>7 (ws6)
+     FD_1:D                    0.102          DlatchModule/doutput
+    ----------------------------------------
+    Total                      3.429ns (0.957ns logic, 2.472ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_in'
+  Clock period: 2.757ns (frequency: 362.766MHz)
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Delay:               2.757ns (Levels of Logic = 2)
+  Source:            clockSourceModule/clockSourceCounter_1 (FF)
+  Destination:       clockSourceModule/clockSourceCounter_6 (FF)
+  Source Clock:      clock_in rising
+  Destination Clock: clock_in rising
+
+  Data Path: clockSourceModule/clockSourceCounter_1 to clockSourceModule/clockSourceCounter_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   0.973  clockSourceModule/clockSourceCounter_1 (clockSourceModule/clockSourceCounter_1)
+     LUT3:I0->O            1   0.205   0.827  clockSourceModule/Mcount_clockSourceCounter_xor<3>111 (clockSourceModule/Mcount_clockSourceCounter_xor<3>11)
+     LUT5:I1->O            1   0.203   0.000  clockSourceModule/Mcount_clockSourceCounter_xor<6>11 (Result<6>)
+     FD:D                      0.102          clockSourceModule/clockSourceCounter_6
+    ----------------------------------------
+    Total                      2.757ns (0.957ns logic, 1.800ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'triggerModule/s1'
+  Clock period: 2.426ns (frequency: 412.184MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.426ns (Levels of Logic = 1)
+  Source:            triggerModule/Tflipflop0/tQout (FF)
+  Destination:       triggerModule/Tflipflop0/tQout (FF)
+  Source Clock:      triggerModule/s1 rising
+  Destination Clock: triggerModule/s1 rising
+
+  Data Path: triggerModule/Tflipflop0/tQout to triggerModule/Tflipflop0/tQout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              20   0.447   1.092  triggerModule/Tflipflop0/tQout (triggerModule/Tflipflop0/tQout)
+     INV:I->O              1   0.206   0.579  triggerModule/Tflipflop0/Qnot1_INV_0 (triggerModule/s2)
+     FD:D                      0.102          triggerModule/Tflipflop0/tQout
+    ----------------------------------------
+    Total                      2.426ns (0.755ns logic, 1.671ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ws1'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              2.346ns (Levels of Logic = 1)
+  Source:            enable_latch (PAD)
+  Destination:       inputLatch_0 (FF)
+  Destination Clock: ws1 rising
+
+  Data Path: enable_latch to inputLatch_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.802  enable_latch_IBUF (enable_latch_IBUF)
+     FDE:CE                    0.322          inputLatch_0
+    ----------------------------------------
+    Total                      2.346ns (1.544ns logic, 0.802ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0085'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.942ns (Levels of Logic = 1)
+  Source:            latch_pulse (PAD)
+  Destination:       comparelsb_latchin (LATCH)
+  Destination Clock: _n0085 falling
+
+  Data Path: latch_pulse to comparelsb_latchin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.683  latch_pulse_IBUF (latch_pulse_IBUF)
+     LD:D                      0.037          comparelsb_latchin
+    ----------------------------------------
+    Total                      1.942ns (1.259ns logic, 0.683ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0089'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.942ns (Levels of Logic = 1)
+  Source:            latch_pulse (PAD)
+  Destination:       maskreg_latchin (LATCH)
+  Destination Clock: _n0089 falling
+
+  Data Path: latch_pulse to maskreg_latchin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.683  latch_pulse_IBUF (latch_pulse_IBUF)
+     LD:D                      0.037          maskreg_latchin
+    ----------------------------------------
+    Total                      1.942ns (1.259ns logic, 0.683ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0093'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.942ns (Levels of Logic = 1)
+  Source:            latch_pulse (PAD)
+  Destination:       triggerreg_latchin (LATCH)
+  Destination Clock: _n0093 falling
+
+  Data Path: latch_pulse to triggerreg_latchin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.683  latch_pulse_IBUF (latch_pulse_IBUF)
+     LD:D                      0.037          triggerreg_latchin
+    ----------------------------------------
+    Total                      1.942ns (1.259ns logic, 0.683ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0081'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.942ns (Levels of Logic = 1)
+  Source:            latch_pulse (PAD)
+  Destination:       comparemsb_latchin (LATCH)
+  Destination Clock: _n0081 falling
+
+  Data Path: latch_pulse to comparemsb_latchin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.683  latch_pulse_IBUF (latch_pulse_IBUF)
+     LD:D                      0.037          comparemsb_latchin
+    ----------------------------------------
+    Total                      1.942ns (1.259ns logic, 0.683ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_select_clock_in'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.038ns (Levels of Logic = 1)
+  Source:            dataFromMcu<0> (PAD)
+  Destination:       clock_select_mux_register_0 (FF)
+  Destination Clock: clock_select_clock_in rising
+
+  Data Path: dataFromMcu<0> to clock_select_mux_register_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.714  dataFromMcu_0_IBUF (dataFromMcu_0_IBUF)
+     FD:D                      0.102          clock_select_mux_register_0
+    ----------------------------------------
+    Total                      2.038ns (1.324ns logic, 0.714ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ws4'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.781ns (Levels of Logic = 2)
+  Source:            reset_counter (PAD)
+  Destination:       addressCounterModule/addressCounterOutput_15 (FF)
+  Destination Clock: ws4 rising
+
+  Data Path: reset_counter to addressCounterModule/addressCounterOutput_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.028  reset_counter_IBUF (reset_counter_IBUF)
+     LUT2:I1->O           16   0.205   1.004  addressCounterModule/_n0033_inv1 (addressCounterModule/_n0033_inv)
+     FDE:CE                    0.322          addressCounterModule/addressCounterOutput_0
+    ----------------------------------------
+    Total                      3.781ns (1.749ns logic, 2.032ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comparelsb_latchin'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.038ns (Levels of Logic = 1)
+  Source:            dataFromMcu<2> (PAD)
+  Destination:       comparelsb_register_module/outBus_2 (FF)
+  Destination Clock: comparelsb_latchin rising
+
+  Data Path: dataFromMcu<2> to comparelsb_register_module/outBus_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.714  dataFromMcu_2_IBUF (dataFromMcu_2_IBUF)
+     FD:D                      0.102          comparelsb_register_module/outBus_2
+    ----------------------------------------
+    Total                      2.038ns (1.324ns logic, 0.714ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'comparemsb_latchin'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.038ns (Levels of Logic = 1)
+  Source:            dataFromMcu<2> (PAD)
+  Destination:       comparemsb_register_module/outBus_2 (FF)
+  Destination Clock: comparemsb_latchin rising
+
+  Data Path: dataFromMcu<2> to comparemsb_register_module/outBus_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.714  dataFromMcu_2_IBUF (dataFromMcu_2_IBUF)
+     FD:D                      0.102          comparemsb_register_module/outBus_2
+    ----------------------------------------
+    Total                      2.038ns (1.324ns logic, 0.714ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'triggerreg_latchin'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.038ns (Levels of Logic = 1)
+  Source:            dataFromMcu<2> (PAD)
+  Destination:       triggeron_register_module/outBus_2 (FF)
+  Destination Clock: triggerreg_latchin rising
+
+  Data Path: dataFromMcu<2> to triggeron_register_module/outBus_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.714  dataFromMcu_2_IBUF (dataFromMcu_2_IBUF)
+     FD:D                      0.102          triggeron_register_module/outBus_2
+    ----------------------------------------
+    Total                      2.038ns (1.324ns logic, 0.714ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'maskreg_latchin'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.038ns (Levels of Logic = 1)
+  Source:            dataFromMcu<2> (PAD)
+  Destination:       mask_register_module/outBus_2 (FF)
+  Destination Clock: maskreg_latchin rising
+
+  Data Path: dataFromMcu<2> to mask_register_module/outBus_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.714  dataFromMcu_2_IBUF (dataFromMcu_2_IBUF)
+     FD:D                      0.102          mask_register_module/outBus_2
+    ----------------------------------------
+    Total                      2.038ns (1.324ns logic, 0.714ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ws5'
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Offset:              3.472ns (Levels of Logic = 2)
+  Source:            write_enable<0> (PAD)
+  Destination:       RamModule/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Destination Clock: ws5 rising
+
+  Data Path: write_enable<0> to RamModule/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           128   1.222   1.950  write_enable_0_IBUF (write_enable_0_IBUF)
+     begin scope: 'RamModule:wea<0>'
+     RAMB16BWER:WEA3           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram
+    ----------------------------------------
+    Total                      3.472ns (1.522ns logic, 1.950ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ws5'
+  Total number of paths / destination ports: 48 / 8
+-------------------------------------------------------------------------
+Offset:              6.030ns (Levels of Logic = 3)
+  Source:            RamModule/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       dout<7> (PAD)
+  Source Clock:      ws5 rising
+
+  Data Path: RamModule/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram to dout<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA0    1   1.850   0.827  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.ram_douta)
+     LUT6:I2->O            1   0.203   0.579  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux81 (douta<7>)
+     end scope: 'RamModule:douta<7>'
+     OBUF:I->O                 2.571          dout_7_OBUF (dout<7>)
+    ----------------------------------------
+    Total                      6.030ns (4.624ns logic, 1.406ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ws4'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.352ns (Levels of Logic = 1)
+  Source:            addressCounterModule/addressCounterOutput_2 (FF)
+  Destination:       test_signal (PAD)
+  Source Clock:      ws4 rising
+
+  Data Path: addressCounterModule/addressCounterOutput_2 to test_signal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             35   0.447   1.334  addressCounterModule/addressCounterOutput_2 (addressCounterModule/addressCounterOutput_2)
+     OBUF:I->O                 2.571          test_signal_OBUF (test_signal)
+    ----------------------------------------
+    Total                      4.352ns (3.018ns logic, 1.334ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'triggerModule/s1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.110ns (Levels of Logic = 1)
+  Source:            triggerModule/Tflipflop0/tQout (FF)
+  Destination:       trigger_status (PAD)
+  Source Clock:      triggerModule/s1 rising
+
+  Data Path: triggerModule/Tflipflop0/tQout to trigger_status
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              20   0.447   1.092  triggerModule/Tflipflop0/tQout (triggerModule/Tflipflop0/tQout)
+     OBUF:I->O                 2.571          trigger_status_OBUF (trigger_status)
+    ----------------------------------------
+    Total                      4.110ns (3.018ns logic, 1.092ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |    2.757|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock triggerModule/s1
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+triggerModule/s1|    2.426|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ws4
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+comparelsb_latchin|         |         |    2.843|         |
+comparemsb_latchin|         |         |    2.840|         |
+triggerModule/s1  |    3.173|         |         |         |
+ws4               |    3.477|         |    3.429|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ws5
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ws1            |    1.461|         |         |         |
+ws4            |    2.549|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.61 secs
+ 
+--> 
+
+Total memory usage is 4502476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

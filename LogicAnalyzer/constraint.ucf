@@ -1,0 +1,50 @@
+
+net "enable_latch" 	loc = "P143" | iostandard = LVCMOS33;
+net write_enable(0) 	loc = "P142" | iostandard = LVCMOS33;
+net "reset_counter" 	loc = "P84" | iostandard = LVCMOS33;
+#NET "reset_counter" CLOCK_DEDICATED_ROUTE = FALSE;
+net "master_control" loc = "P99" | iostandard = LVCMOS33;
+net "reset_trigger" 	loc = "P140" | iostandard = LVCMOS33;
+net "inc" 				loc = "P127" | iostandard = LVCMOS33;
+net "latch_pulse" 	loc = "P139" | iostandard = LVCMOS33;
+net "trigger_mux_select" 		loc = "P138" | iostandard = LVCMOS33;
+net pulsein_demux_select(0) 	loc = "P137" | iostandard = LVCMOS33;
+net pulsein_demux_select(1) 	loc = "P134" | iostandard = LVCMOS33;
+
+net "clock_in" loc = "P55" | iostandard = LVCMOS25;
+
+net "clock_select_clock_in" loc = "P133" | iostandard = LVCMOS33;
+
+net dp(0) loc = "P14" | iostandard = LVCMOS33;
+net dp(1) loc = "P15" | iostandard = LVCMOS33;
+net dp(2) loc = "P16" | iostandard = LVCMOS33;
+net dp(3) loc = "P17" | iostandard = LVCMOS33;
+net dp(4) loc = "P21" | iostandard = LVCMOS33;
+net dp(5) loc = "P22" | iostandard = LVCMOS33;
+net dp(6) loc = "P23" | iostandard = LVCMOS33;
+net dp(7) loc = "P24" | iostandard = LVCMOS33;
+
+net dataFromMcu(0) loc = "P115" | iostandard = LVCMOS33;
+net dataFromMcu(1) loc = "P114" | iostandard = LVCMOS33;
+net dataFromMcu(2) loc = "P112" | iostandard = LVCMOS33;
+net dataFromMcu(3) loc = "P111" | iostandard = LVCMOS33;
+net dataFromMcu(4) loc = "P105" | iostandard = LVCMOS33;
+net dataFromMcu(5) loc = "P102" | iostandard = LVCMOS33;
+net dataFromMcu(6) loc = "P101" | iostandard = LVCMOS33;
+net dataFromMcu(7) loc = "P100" | iostandard = LVCMOS33;
+
+net dout(0) loc = "P126" | iostandard = LVTTL;
+net dout(1) loc = "P124" | iostandard = LVTTL;
+net dout(2) loc = "P121" | iostandard = LVTTL;
+net dout(3) loc = "P120" | iostandard = LVTTL;
+net dout(4) loc = "P119" | iostandard = LVTTL;
+net dout(5) loc = "P118" | iostandard = LVTTL;
+net dout(6) loc = "P117" | iostandard = LVTTL;
+net dout(7) loc = "P116" | iostandard = LVTTL;
+
+net "complete" loc = "P132" | iostandard = LVTTL;
+
+net "trigger_status" loc = "P131" | iostandard = LVTTL;
+
+# for test signal
+net "test_signal" loc = "P45" | iostandard = LVCMOS33;

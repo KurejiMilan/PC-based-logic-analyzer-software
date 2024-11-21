@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\FpgaProjects\LogicAnalyzer\impact.xsl
+OUTFILE=D:\FpgaProjects\LogicAnalyzer\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\FpgaProjects\LogicAnalyzer
+LICENSE=iMPACT
+USER_INFO=iMPACT

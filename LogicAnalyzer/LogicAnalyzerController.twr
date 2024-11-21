@@ -1,0 +1,203 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o
+LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf
+
+Design file:              LogicAnalyzerController.ncd
+Physical constraint file: LogicAnalyzerController.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clock_select_clock_in
+--------------+------------+------------+------------+------------+---------------------------+--------+
+              |Max Setup to|  Process   |Max Hold to |  Process   |                           | Clock  |
+Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)          | Phase  |
+--------------+------------+------------+------------+------------+---------------------------+--------+
+dataFromMcu<0>|    2.076(R)|      SLOW  |   -0.895(R)|      FAST  |clock_select_clock_in_BUFGP|   0.000|
+dataFromMcu<1>|    2.302(R)|      SLOW  |   -1.056(R)|      FAST  |clock_select_clock_in_BUFGP|   0.000|
+dataFromMcu<2>|    1.955(R)|      SLOW  |   -0.818(R)|      FAST  |clock_select_clock_in_BUFGP|   0.000|
+--------------+------------+------------+------------+------------+---------------------------+--------+
+
+Setup/Hold to clock inc
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+reset_counter  |    1.774(R)|      SLOW  |    0.754(R)|      SLOW  |ws4               |   0.000|
+write_enable<0>|    1.944(R)|      SLOW  |    3.462(R)|      SLOW  |ws5               |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock master_control
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+dp<0>          |   -2.245(R)|      FAST  |    4.116(R)|      SLOW  |ws1               |   0.000|
+dp<1>          |   -2.214(R)|      FAST  |    4.053(R)|      SLOW  |ws1               |   0.000|
+dp<2>          |   -2.342(R)|      FAST  |    4.277(R)|      SLOW  |ws1               |   0.000|
+dp<3>          |   -2.311(R)|      FAST  |    4.214(R)|      SLOW  |ws1               |   0.000|
+dp<4>          |   -2.494(R)|      FAST  |    4.517(R)|      SLOW  |ws1               |   0.000|
+dp<5>          |   -2.463(R)|      FAST  |    4.454(R)|      SLOW  |ws1               |   0.000|
+dp<6>          |   -2.591(R)|      FAST  |    4.678(R)|      SLOW  |ws1               |   0.000|
+dp<7>          |   -2.560(R)|      FAST  |    4.615(R)|      SLOW  |ws1               |   0.000|
+enable_latch   |   -0.598(R)|      FAST  |    1.880(R)|      SLOW  |ws1               |   0.000|
+reset_counter  |    1.539(R)|      SLOW  |    0.976(R)|      SLOW  |ws4               |   0.000|
+write_enable<0>|    1.650(R)|      SLOW  |    3.746(R)|      SLOW  |ws5               |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock pulsein_demux_select<0>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+latch_pulse |   -0.101(F)|      FAST  |    0.889(F)|      SLOW  |_n0081            |   0.000|
+            |   -0.685(F)|      FAST  |    1.692(F)|      SLOW  |_n0085            |   0.000|
+            |    0.039(F)|      FAST  |    0.647(F)|      SLOW  |_n0089            |   0.000|
+            |   -0.142(F)|      FAST  |    0.891(F)|      SLOW  |_n0093            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock pulsein_demux_select<1>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+latch_pulse |   -0.365(F)|      FAST  |    1.245(F)|      SLOW  |_n0081            |   0.000|
+            |   -0.949(F)|      FAST  |    2.048(F)|      SLOW  |_n0085            |   0.000|
+            |    0.187(F)|      SLOW  |    0.486(F)|      SLOW  |_n0089            |   0.000|
+            |   -0.007(F)|      FAST  |    0.730(F)|      SLOW  |_n0093            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock inc to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+complete    |        10.594(F)|      SLOW  |         6.597(F)|      FAST  |ws4               |   0.000|
+dout<0>     |        16.548(R)|      SLOW  |         6.525(R)|      FAST  |ws5               |   0.000|
+dout<1>     |        18.382(R)|      SLOW  |         8.073(R)|      FAST  |ws5               |   0.000|
+dout<2>     |        17.956(R)|      SLOW  |         7.262(R)|      FAST  |ws5               |   0.000|
+dout<3>     |        15.022(R)|      SLOW  |         6.856(R)|      FAST  |ws5               |   0.000|
+dout<4>     |        18.451(R)|      SLOW  |         7.444(R)|      FAST  |ws5               |   0.000|
+dout<5>     |        20.367(R)|      SLOW  |         8.469(R)|      FAST  |ws5               |   0.000|
+dout<6>     |        16.386(R)|      SLOW  |         7.340(R)|      FAST  |ws5               |   0.000|
+dout<7>     |        16.260(R)|      SLOW  |         7.295(R)|      FAST  |ws5               |   0.000|
+test_signal |        14.312(R)|      SLOW  |         8.944(R)|      FAST  |ws4               |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock master_control to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+complete    |        10.816(F)|      SLOW  |         6.896(F)|      FAST  |ws4               |   0.000|
+dout<0>     |        16.832(R)|      SLOW  |         6.813(R)|      FAST  |ws5               |   0.000|
+dout<1>     |        18.666(R)|      SLOW  |         8.361(R)|      FAST  |ws5               |   0.000|
+dout<2>     |        18.240(R)|      SLOW  |         7.550(R)|      FAST  |ws5               |   0.000|
+dout<3>     |        15.306(R)|      SLOW  |         7.144(R)|      FAST  |ws5               |   0.000|
+dout<4>     |        18.735(R)|      SLOW  |         7.732(R)|      FAST  |ws5               |   0.000|
+dout<5>     |        20.651(R)|      SLOW  |         8.757(R)|      FAST  |ws5               |   0.000|
+dout<6>     |        16.670(R)|      SLOW  |         7.628(R)|      FAST  |ws5               |   0.000|
+dout<7>     |        16.544(R)|      SLOW  |         7.583(R)|      FAST  |ws5               |   0.000|
+test_signal |        14.534(R)|      SLOW  |         9.243(R)|      FAST  |ws4               |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock reset_trigger to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+trigger_status|        10.818(R)|      SLOW  |         6.865(R)|      FAST  |triggerModule/s1  |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock trigger_mux_select to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+trigger_status|        10.850(R)|      SLOW  |         6.869(R)|      FAST  |triggerModule/s1  |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |    1.737|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock inc
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+inc               |    5.291|         |    3.255|         |
+master_control    |    7.414|         |    3.255|         |
+reset_trigger     |    4.675|         |         |         |
+trigger_mux_select|    4.675|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock master_control
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+inc               |    5.291|         |    3.255|         |
+master_control    |    7.414|         |    3.255|         |
+reset_trigger     |    4.675|         |         |         |
+trigger_mux_select|    4.675|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_trigger
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+reset_trigger     |    0.985|         |         |         |
+trigger_mux_select|    0.985|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock trigger_mux_select
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+reset_trigger     |    0.985|         |         |         |
+trigger_mux_select|    0.985|         |         |         |
+------------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat May 07 21:34:43 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

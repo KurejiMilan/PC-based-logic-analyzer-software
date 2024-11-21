@@ -1,0 +1,30 @@
+Command line:
+   LogicAnalyzerController_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62811
+
+Fri Nov 18 11:32:16 2022
+
+
+ Elaboration Time: 1.125 sec
+
+ Current Memory Usage: 5533.72 Meg
+
+ Total Signals          : 336
+ Total Nets             : 525070
+ Total Signal Drivers   : 133
+ Total Blocks           : 27
+ Total Primitive Blocks : 18
+ Total Processes        : 104
+ Total Traceable Variables  : 226
+ Total Scalar Nets and Variables : 526422
+Total Line Count : 425
+Total Line Count : 425
+
+ Total Simulation Time: 2.39063 sec
+
+ Current Memory Usage: 5061.86 Meg
+
+Fri Nov 18 11:34:37 2022
+

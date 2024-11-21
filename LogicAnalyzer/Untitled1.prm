@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\FpgaProjects\LogicAnalyzer//Untitled1 -s 512 -u 0000 D:/FpgaProjects/LogicAnalyzer/logicanalyzercontroller.bit -spi 
+
+PROM D:\FpgaProjects\LogicAnalyzer\Untitled1.prm map: Sat May 07 14:20:56 2022
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02dcb8ae
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     May 07 14:19:02 2022 D:/FpgaProjects/LogicAnalyzer/logicanalyzercontroller.bit

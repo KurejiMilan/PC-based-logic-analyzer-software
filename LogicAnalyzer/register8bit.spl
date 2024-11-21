@@ -1,0 +1,6 @@
+[Inputs]
+latchInData
+=registerInput[7:0]=
+[Outputs]
+=registerOutput[7:0]=
+[BiDir]

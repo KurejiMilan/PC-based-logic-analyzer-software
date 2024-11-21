@@ -1,0 +1,1 @@
+vhdtdtfi -prj LogicAnalyzer -o D:/FpgaProjects/LogicAnalyzer/Dflipflop.vhi -module Dflipflop -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Dflipflop.vhd 

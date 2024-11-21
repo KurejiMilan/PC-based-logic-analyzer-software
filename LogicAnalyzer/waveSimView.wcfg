@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FpgaProjects/LogicAnalyzer/controllerTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="controllertb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/controllertb/enable_latch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_latch</obj_property>
+      <obj_property name="ObjectShortName">enable_latch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/write_enable" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_enable[0:0]</obj_property>
+      <obj_property name="ObjectShortName">write_enable[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/reset_counter" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_counter</obj_property>
+      <obj_property name="ObjectShortName">reset_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/master_control" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_control</obj_property>
+      <obj_property name="ObjectShortName">master_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/reset_trigger" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_trigger</obj_property>
+      <obj_property name="ObjectShortName">reset_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inc</obj_property>
+      <obj_property name="ObjectShortName">inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/latch_pulse" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">latch_pulse</obj_property>
+      <obj_property name="ObjectShortName">latch_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/trigger_mux_select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trigger_mux_select</obj_property>
+      <obj_property name="ObjectShortName">trigger_mux_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/pulsein_demux_select" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pulsein_demux_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pulsein_demux_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/dp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/datafrommcu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datafrommcu[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datafrommcu[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/complete" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">complete</obj_property>
+      <obj_property name="ObjectShortName">complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/trigger_status" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trigger_status</obj_property>
+      <obj_property name="ObjectShortName">trigger_status</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/uut/clockSourceModule/clockout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clockout</obj_property>
+      <obj_property name="ObjectShortName">clockout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/uut/RamModule/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/uut/RamModule/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/uut/addressCounterModule/enable_counter" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_counter</obj_property>
+      <obj_property name="ObjectShortName">enable_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertb/uut/addressCounterModule/addresscounteroutput" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addresscounteroutput[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addresscounteroutput[15:0]</obj_property>
+   </wvobject>
+</wave_config>

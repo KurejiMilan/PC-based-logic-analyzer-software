@@ -1,0 +1,8 @@
+work	"Dflipflop.vhd"
+work	"LogicAnalyzerController.vhd"
+work	"TriggerCircuit.vhd"
+work	"addressCounter.vhd"
+work	"clockSource.vhd"
+work	"ipcore_dir/internalRAM.vhd"
+work	"register8bit.vhd"
+work	"triggerTflipflop.vhd"

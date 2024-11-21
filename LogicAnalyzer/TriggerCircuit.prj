@@ -1,0 +1,2 @@
+vhdl work "triggerTflipflop.vhd"
+vhdl work "TriggerCircuit.vhd"

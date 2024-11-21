@@ -1,0 +1,195 @@
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/LogicAnalyzerController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraint.ucf -p xc6slx9-tqg144-3 LogicAnalyzerController.ngc LogicAnalyzerController.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LogicAnalyzerController_map.ncd LogicAnalyzerController.ngd LogicAnalyzerController.pcf 
+par -w -intstyle ise -ol high -mt off LogicAnalyzerController_map.ncd LogicAnalyzerController.ncd LogicAnalyzerController.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LogicAnalyzerController.twx LogicAnalyzerController.ncd -o LogicAnalyzerController.twr LogicAnalyzerController.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f LogicAnalyzerController.ut LogicAnalyzerController.ncd 

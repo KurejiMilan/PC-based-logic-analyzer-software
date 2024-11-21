@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.syr" 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 TriggerCircuit.ngc TriggerCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TriggerCircuit_map.ncd TriggerCircuit.ngd TriggerCircuit.pcf 
+par -w -intstyle ise -ol high -mt off TriggerCircuit_map.ncd TriggerCircuit.ncd TriggerCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TriggerCircuit.twx TriggerCircuit.ncd -o TriggerCircuit.twr TriggerCircuit.pcf 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 TriggerCircuit.ngc TriggerCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TriggerCircuit_map.ncd TriggerCircuit.ngd TriggerCircuit.pcf 
+par -w -intstyle ise -ol high -mt off TriggerCircuit_map.ncd TriggerCircuit.ncd TriggerCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TriggerCircuit.twx TriggerCircuit.ncd -o TriggerCircuit.twr TriggerCircuit.pcf 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 TriggerCircuit.ngc TriggerCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TriggerCircuit_map.ncd TriggerCircuit.ngd TriggerCircuit.pcf 
+par -w -intstyle ise -ol high -mt off TriggerCircuit_map.ncd TriggerCircuit.ncd TriggerCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TriggerCircuit.twx TriggerCircuit.ncd -o TriggerCircuit.twr TriggerCircuit.pcf 
+xst -intstyle ise -ifn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.xst" -ofn "D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 TriggerCircuit.ngc TriggerCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TriggerCircuit_map.ncd TriggerCircuit.ngd TriggerCircuit.pcf 
+par -w -intstyle ise -ol high -mt off TriggerCircuit_map.ncd TriggerCircuit.ncd TriggerCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TriggerCircuit.twx TriggerCircuit.ncd -o TriggerCircuit.twr TriggerCircuit.pcf 
+vhdtdtfi -prj LogicAnalyzer -o D:/FpgaProjects/LogicAnalyzer/TriggerCircuit.vhi -module TriggerCircuit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work triggerTflipflop.vhd -lib work TriggerCircuit.vhd 

@@ -1,0 +1,3 @@
+vhdl isim_temp "triggerTflipflop.vhd"
+vhdl isim_temp "TriggerCircuit.vhd"
+vhdl isim_temp "triggerCircuitTb.vhd"
